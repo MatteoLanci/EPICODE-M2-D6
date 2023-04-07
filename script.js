@@ -4,6 +4,7 @@ function changeH1() {
   const titleFooter = document.querySelector("h2");
   title.innerText = "BuyView";
   titleFooter.innerText = "BuyView";
+  console.log(title, titleFooter);
 }
 changeH1();
 
@@ -12,6 +13,7 @@ changeH1();
 function changeBG() {
   const bg = document.querySelector("body");
   bg.style.background = "#f2f2f2";
+  console.log(bg);
 }
 changeBG();
 
@@ -20,8 +22,9 @@ changeBG();
 function changeAddress() {
   const address = document.getElementById("address");
   address.innerText = "Via dei Magazzini Generali, 16, 00154 Roma RM";
+  console.log(address);
 }
-console.log(changeAddress());
+changeAddress();
 
 //? -----------------------------------------------------------------------------------
 //! LA SEGUENTE FUNZIONE CONSENTE AGGIUNGERE UNA CLASSE DI STILE A TUTTI I LINK (elementi <a></a>)
@@ -30,8 +33,9 @@ function addClassToLink() {
   for (let i = 0; i < links.length; i++) {
     links[i].classList.add("amazonLink");
   }
+  console.log(links);
 }
-console.log(addClassToLink());
+addClassToLink();
 
 //? -----------------------------------------------------------------------------------
 //! LA SEGUENTE FUNZIONE CONSENTE DI AGGIUNGERE UNA CLASSE DI STILE A TUTTE LE IMMAGINI PRESENTI (elementi <img> in questo caso presenti solo nella tabella)
@@ -40,8 +44,9 @@ function imageClass() {
   for (let i = 0; i < img.length; i++) {
     img[i].classList.toggle("visibility");
   }
+  console.log(img);
 }
-console.log(imageClass());
+imageClass();
 
 //? -----------------------------------------------------------------------------------
 //! LA SEGUENTE FUNZIONE CONSENTE DI GENERARE DEI VALORI RANDOMICI ASSEGNATI ALLE VARIABILI CHE ANDRANNO A COMPORRE I 3 VALORI RGB (rgb(255, 255, 255)), ASSEGNARE QUESTE VARIABILI AD UN ULTERIORE VARIABILE CHE COMPONE LA 'STRINGA' DELL'RGB CHE POI ANDRÀ INSERITA COME PROPRIETÀ DI STILE 'COLOR' ED APPLICATA AD OGNI ELEMENTO CHE RAPPRESENTA IL PREZZO DI OGNI ARTICOLO ALL'INTERNO DELLA TABELLA (elementi <td> con id='price')
@@ -56,4 +61,4 @@ function priceColor() {
     price[i].style.color = randomColor;
   }
 }
-console.log(priceColor());
+priceColor();
